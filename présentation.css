@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Martel', serif;
+    font-family: 'Sansita', sans-serif;
+    font-family: 'Satisfy', cursive;
+}
+
+h1 {
+    font-family: 'Satisfy';
+    font-size: 50px;
+    text-decoration-line: underline;
+}
+
+p {
+    font-family: 'Martel';
+    margin-bottom: 200px;
+}
+
+.NavBar {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    background-color: rgb(187, 202, 180);
+}
+
+.btn {
+    font-family: 'Sansita';
+    color: black;
+}
+
+.btn:hover{
+    color:#fce6c7;
+    text-decoration-line: underline ;
+}
+
+/* ----------- section */
+
+.corp {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.gauche {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 50px 70px;
+}
+
+.droite {
+    height: 100%;
+    width: 40%;
+    background: linear-gradient(to left,rgb(252, 230, 199) 0%,rgb(252, 230, 199) 600px, transparent 5px);
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 3px solid white;
+}
+
+.droite img {
+    width: 450px;
+    height: 300px;
+    border: 3px solid white;
+}
+
+
+/* ---------- footer */ 
+
+.footer {
+    background-color: rgb(80, 80, 80);
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.footer p {
+    font-family: 'satisfy';
+    font-size: 20px;
+
+}
+
+.admin {
+    color: rgb(80, 80, 80);
+}
+
+.admin:hover {
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Martel', serif;
+    font-family: 'Sansita', sans-serif;
+    font-family: 'Satisfy', cursive;
+}
+
+h1 {
+    font-family: 'Satisfy';
+    font-size: 50px;
+    text-decoration-line: underline;
+    padding-bottom: 62px;
+}
+
+.NavBar {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    background-color: rgb(187, 202, 180);
+}
+
+.btn {
+    font-family: 'Sansita';
+    color: black;
+}
+
+.btn:hover{
+    color:#fce6c7;
+    text-decoration-line: underline ;
+}
+
+/* -------------- coté gauche  */ 
+
+.corp {
+    height: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gauche {
+    height: 100%;
+    width: 65%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+/* -----------  Formulaire */
+
+}
+
+ input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Martel';
+}
+  
+  input[type=Envoyer] {
+    background-color: (187, 202, 180);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Martel';
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  input[type=Envoyer]:hover {
+    background-color: #fce6c7;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 70%;
+  } 
+
+
+
+/* ----------- coté droit */ 
+
+
+.droite {
+    height: 100%;
+    width: 35%;
+    text-align: center;
+    border: 3px solid white;
+    background-color:#fce6c7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-droite {
+    
+    height: 30%;
+    width: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-droite span{
+    font-family: 'Sansita';
+    font-weight: bold;
+}
+
+.container-droite p {
+    font-family: 'Martel';
+}
+
+
+
+/* ---------- footer */ 
+
+.footer {
+    background-color: rgb(80, 80, 80);
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.footer p {
+    font-family: 'satisfy';
+    font-size: 20px;
+
+}
+
+.admin {
+    color: rgb(80, 80, 80);
+}
+
+.admin:hover {
+    color: rgb(255, 255, 255);
+}

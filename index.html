@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Wireframe, Maquette, integration</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Martel:wght@400;700&family=Sansita:wght@400;700;800&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <meta property="og:title" content="Riva-peinture"/>
+    <meta property="og:type" content="Peintre en batiment en Vendée"/>
+    <meta property="og:url" content="file:///home/arinfo/Documents/Dev/Exercice%20CDC/index.html" />
+    <meta property="og:image" content="file:///home/arinfo/Documents/Dev/Exercice%20CDC/acceuil/image/peinture-murale-.jpg"/>
+    <meta property="og:description" content=" Peintre en batiment Vendée. papierpeint, peinture interieur, exterieur. Peinture écologique" />
+    
+
+</head>
+
+<body>
+
+
+    <header>
+        <img class="logo" src="./acceuil/image/Logo.png" alt="logo d'entreprise Riva peinture">
+
+        <div class="navbar">
+            <ul class="gauche">
+                <li><a href="./index.html" class="btn">Accueil </a></li>
+                <li><a href="./présentation.html" class="btn">Présentation </a></li>
+            </ul>
+            <ul class="droite">
+                <li><a href="./service.html" class="btn">Services </a></li>
+                <li><a href="./contact.html" class="btn">Contact </a></li>
+            </ul>
+        </div>
+
+        <img class="photo" src="./acceuil/image/quelles-couleurs-choisir-pour-un-salon-tendance.jpg" alt="photo salon avec mur vert">
+    </header>
+
+    <div class="container">
+        <div class="container-services">
+            <h1>Nos Services</h1>
+            <P>Réalisation de papier peint, peinture interieur et extérieur sur tout supports</P>
+            <p>Notre petit plus... L'aerographie.</p>
+            <a href="./service.html" class="btn-service">en savoir plus </a></li>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-entreprise">
+            <div class="entreprise" >
+                <div class="titre">
+                    <h1>Notre Entreprise.</h1>
+                </div>
+                <div class="para">
+                    <p>Riva peinture est une société fondée en 2009 à proximité de luçon (85) <br> Nous accompagons aussi
+                    les particuliers que les professionnels dans l'habillage de leurs murs interieur et exterieur de
+                    leur bâtiments.</p>
+                </div>
+                 <div class="container-lien"></div>
+                <div class="lien"><a href="./présentation.html" class="btn-entreprise">Notre entreprise -> </a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="réalisations">
+
+        <h1><span>Réalisations</span></h1>
+
+        <div class="row">
+            <div class="column">
+                <img src="./acceuil/image/facade.jpg" onclick="openModal();currentSlide(1)"
+                    class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="./acceuil/image/photo-2.png" onclick="openModal();currentSlide(2)"
+                    class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="./acceuil/image/peinture-murale-.jpg" onclick="openModal();currentSlide(3)"
+                    class="hover-shadow">
+            </div>
+    
+            <div class="column">
+                <img src="./acceuil/image/facade2.jpg" onclick="openModal();currentSlide(4)"
+                    class="hover-shadow">
+            </div>
+    
+            <div class="column">
+                <img src="./acceuil/image/papierpeint.jpg" onclick="openModal();currentSlide(5)"
+                    class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="./acceuil/image/photo 1.jpg" onclick="openModal();currentSlide(6)"
+                    class="hover-shadow">
+            </div>
+        </div>
+    
+    
+    
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+    
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="./acceuil/image/facade.jpg" style="width:100%">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="./acceuil/image/photo-2.png" style="width:100%">
+                </div>
+    
+    
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="./acceuil/image/peinture-murale-.jpg" style="width:100%">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./acceuil/image/facade2.jpg" style="width:100%">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="./acceuil/image/papierpeint.jpg" style="width:100%">
+                </div>
+    
+    
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="./acceuil/image/photo 1.jpg" style="width:100%">
+                </div>
+    
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+    
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="./acceuil/image/facade.jpg" onclick="currentSlide(1)"
+                        alt="Facade rouge">
+                </div>
+    
+                <div class="column">
+                    <img class="demo" src="./acceuil/image/photo-2.png" onclick="currentSlide(2)"
+                        alt="Mur deco">
+                </div>
+    
+                <div class="column">
+                    <img class="demo" src="./acceuil/image/peinture-murale-.jpg" onclick="currentSlide(3)"
+                        alt="Papier peint">
+                </div>
+    
+                <div class="column">
+                    <img class="demo" src="./acceuil/image/facade2.jpg" onclick="currentSlide(4)"
+                        alt="facade et moulure">
+                </div>
+    
+                <div class="column">
+                    <img class="demo" src="./acceuil/image/papierpeint.jpg" onclick="currentSlide(5)"
+                        alt="Mur 3D">
+                </div>
+    
+                <div class="column">
+                    <img class="demo" src="./acceuil/image/photo 1.jpg" onclick="currentSlide(6)"
+                        alt="Forme Geometrique">
+                </div>
+    
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="footer">
+        <img src="./acceuil/image/riva logo.png" alt="logo">
+        <p>© copyright Riva-peinture - Designed by sullivan - <a href="admin.html" class="admin">admin</a></p>
+    </div>
+
+    <script>
+
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+</body>
+
+</html>
